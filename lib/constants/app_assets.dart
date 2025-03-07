@@ -11,8 +11,8 @@ class AppAssets {
   static const String home = "${_base}home.png";
   static const String homeImg = "${_base}home_img.jpg";
   static const String inbox = "${_base}inbox.png";
-  static const String linkedln = "${_base}linkedln .png";
-  static const String love = "${_base}love .png";
+  static const String linkedln = "${_base}linkeldn.png";
+  static const String love = "${_base}love.png";
   static const String mail = "${_base}mail.png";
   static const String projects = "${_base}projects.png";
   static const String smiley = "${_base}smiley.png";
