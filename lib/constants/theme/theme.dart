@@ -12,8 +12,93 @@ class AppTheme {
       brightness: Brightness.light,
       scaffoldBackgroundColor: AppColors.lightModeBackgroundColor,
       cardColor: AppColors.lightModeBackgroundColor,
-      dividerColor: AppColors.lightmodeTextColor);
+      iconTheme: IconThemeData(
+        color: AppColors.lightmodeTextColor,
+      ),
+      dividerColor: AppColors.lightModeToolsColor,
+      drawerTheme:
+          DrawerThemeData(backgroundColor: AppColors.lightModeBackgroundColor),
+      textTheme: TextTheme(
+          headlineLarge: TextStyle(
+              fontFamily: "Rubik Moonrocks",
+              fontSize: 20,
+              fontWeight: FontWeight.w700,
+              color: AppColors.lightmodeTextColor),
+          headlineSmall: TextStyle(
+              fontFamily: "Rubik",
+              fontSize: 18.5,
+              color: AppColors.lightmodeTextColor,
+              decoration: TextDecoration.underline,
+              decorationColor: AppColors.lightModeToolsColor,
+              decorationThickness: 2.0),
+          headlineMedium: TextStyle(
+              fontSize: 33,
+              fontFamily: "Rubik",
+              fontWeight: FontWeight.w500,
+              color: AppColors.lightModeToolsColor),
+          bodyMedium: TextStyle(
+              fontFamily: "Lobster",
+              fontSize: 38,
+              fontWeight: FontWeight.w700,
+              color: AppColors.lightmodeTextColor),
+          titleLarge: TextStyle(
+              fontFamily: "Rubik",
+              fontWeight: FontWeight.bold,
+              fontSize: 15,
+              color: AppColors.lightmodeTextColor),
+          bodyLarge: TextStyle(
+              fontFamily: "Lobster",
+              fontSize: 15,
+              fontWeight: FontWeight.w500,
+              color: AppColors.lightmodeTextColor)));
 
   //darkmode
-  static final ThemeData darkmode = ThemeData();
+  static final ThemeData darkmode = ThemeData(
+    appBarTheme: AppBarTheme(
+        backgroundColor: AppColors.darkModeBackgroundColor,
+        elevation: 0,
+        scrolledUnderElevation: 0),
+    scaffoldBackgroundColor: AppColors.darkModeBackgroundColor,
+    dividerColor: AppColors.darkmodeToolsColor,
+    cardColor: AppColors.lightmodeTextColor,
+    drawerTheme:
+        DrawerThemeData(backgroundColor: AppColors.darkModeBackgroundColor),
+    iconTheme: IconThemeData(
+      color: AppColors.darkmodeTextColor,
+    ),
+    textTheme: TextTheme(
+      bodyMedium: TextStyle(
+          fontFamily: "Lobster",
+          fontSize: 36,
+          fontWeight: FontWeight.w700,
+          color: AppColors.darkmodeTextColor),
+      headlineLarge: TextStyle(
+          fontFamily: "Rubik Moonrocks",
+          fontSize: 20,
+          fontWeight: FontWeight.w700,
+          color: AppColors.darkmodeTextColor),
+      headlineMedium: TextStyle(
+          fontSize: 33,
+          fontFamily: "Rubik",
+          fontWeight: FontWeight.w500,
+          color: AppColors.darkmodeToolsColor),
+      headlineSmall: TextStyle(
+          fontFamily: "Rubik",
+          fontSize: 18.5,
+          color: AppColors.darkmodeTextColor,
+          decoration: TextDecoration.underline,
+          decorationColor: AppColors.darkmodeToolsColor,
+          decorationThickness: 2.0),
+      titleLarge: TextStyle(
+          fontFamily: "Rubik",
+          fontWeight: FontWeight.bold,
+          fontSize: 15,
+          color: AppColors.darkmodeTextColor),
+      bodyLarge: TextStyle(
+          fontFamily: "Lobster",
+          fontSize: 15,
+          fontWeight: FontWeight.w500,
+          color: AppColors.darkmodeTextColor),
+    ),
+  );
 }

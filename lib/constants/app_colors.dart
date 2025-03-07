@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
-  static const Color darkModeBackgroundColor = Colors.black12;
+  static const Color darkModeBackgroundColor = Colors.black;
   static const Color lightModeBackgroundColor = Colors.white;
   static const Color darkmodeToolsColor = Colors.pink;
   static const Color lightModeToolsColor = Colors.purple;
