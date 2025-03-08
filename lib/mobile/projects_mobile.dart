@@ -16,6 +16,35 @@ class ProjectsMobile extends StatefulWidget {
 class _ProjectsMobileState extends State<ProjectsMobile> {
   final List<Project> projects = [
     Project(
+      title: 'Student pal',
+      misubtitle:
+          'Developed a scheduler app to help students efficiently manage their daily academic activities and track completed tasks. The app allows users to create, update, and delete tasks, set reminders, and visualize their progress through a clean and intuitive interface. It ensures students stay organized and productive throughout their academic journey.',
+      mitechnologies: "Flutter, Firebase, MVVM Architecture, Provider, Sqflite",
+      migithublink: "https://github.com/FavourTy/sca_student_pal",
+    ),
+    Project(
+      title: 'Floww',
+      misubtitle:
+          'Built a real-time chat application enabling users to send and receive messages instantly. The app features user authentication, chat history, and profile images, providing a seamless communication experience. It ensures secure and efficient messaging with a modern and responsive design.',
+      mitechnologies: "Flutter, Firebase, MVVM Architecture, Provider",
+      migithublink: "https://github.com/FavourTy/smart_/tree/main/floww",
+    ),
+    Project(
+      title: 'Weather App',
+      misubtitle:
+          'Developed a weather app that provides real-time weather updates based on the user’s current location. Users can also fetch weather information for all 36 states of Nigeria, including the Federal Capital Territory (FCT). The app offers accurate and up-to-date weather forecasts with a user-friendly interface.',
+      mitechnologies: "Flutter, OpenWeatherMap API, Provider",
+      migithublink: "https://github.com/FavourTy/smart_/tree/main/weather_app",
+    ),
+    Project(
+      title: 'Shopper',
+      misubtitle:
+          'Created a shopping application utilizing the Fake Store API, offering a seamless shopping experience. The app includes user authentication, product categorization, and price conversion. Users can browse products, add them to their cart, and complete purchases with ease.',
+      mitechnologies:
+          "Flutter, Fake Store API, Object-Oriented Programming (OOP)",
+      migithublink: "https://github.com/FavourTy/shopper_app",
+    ),
+    Project(
       title: 'My Portfolio',
       misubtitle:
           'Developed a dynamic and interactive portfolio website showcasing my projects, skills, and professional journey. The website offers visitors a comprehensive view of my accomplishments and areas of expertise, with a user-friendly interface and responsive design',
@@ -36,20 +65,20 @@ class _ProjectsMobileState extends State<ProjectsMobile> {
       mitechnologies: "Flutter, Dart, Material-UI",
       migithublink: "https://github.com/FavourTy/meals_app",
     ),
-    Project(
-      title: 'Expense App',
-      misubtitle:
-          'Built a personal finance and expense tracking application that allows users to monitor their spending, set budgets, and visualize their financial habits through charts and graphs. The app provides insights to help users manage their finances more effectively.',
-      mitechnologies: "Flutter,Dart, Firebase, Material-UI",
-      migithublink: "https://github.com/FavourTy/expense_app",
-    ),
-    Project(
-      title: 'Chrome Extension',
-      misubtitle:
-          'I Developed a Chrome extension to enhance browsing efficiency and productivity. The extension offers features like quick links, website blocking, and custom reminders, tailored to improve the user\'s web experience.',
-      mitechnologies: "Flutter, Dart, Material-UI",
-      migithublink: "https://github.com/FavourTy/flutter_chrome_extension",
-    ),
+    // Project(
+    //   title: 'Expense App',
+    //   misubtitle:
+    //       'Built a personal finance and expense tracking application that allows users to monitor their spending, set budgets, and visualize their financial habits through charts and graphs. The app provides insights to help users manage their finances more effectively.',
+    //   mitechnologies: "Flutter,Dart, Firebase, Material-UI",
+    //   migithublink: "https://github.com/FavourTy/expense_app",
+    // ),
+    // Project(
+    //   title: 'Chrome Extension',
+    //   misubtitle:
+    //       'I Developed a Chrome extension to enhance browsing efficiency and productivity. The extension offers features like quick links, website blocking, and custom reminders, tailored to improve the user\'s web experience.',
+    //   mitechnologies: "Flutter, Dart, Material-UI",
+    //   migithublink: "https://github.com/FavourTy/flutter_chrome_extension",
+    // ),
   ];
   Project? selectedProject;
   @override
@@ -106,7 +135,7 @@ class _ProjectsMobileState extends State<ProjectsMobile> {
                     children: [
                       Container(
                         width: 1,
-                        height: 210,
+                        height: 270,
                         decoration: const BoxDecoration(
                             gradient: LinearGradient(
                           colors: [Colors.yellow, Colors.blue],
@@ -134,12 +163,14 @@ class _ProjectsMobileState extends State<ProjectsMobile> {
                                 child: Text(
                                     selectedProject?.misubtitle ??
                                         'Select a project to see details',
-                                    maxLines: 10,
+                                    maxLines: 20,
                                     // overflow: TextOverflow.ellipsis,
                                     softWrap: true,
                                     textAlign: TextAlign.justify,
-                                    style:
-                                        Theme.of(context).textTheme.titleLarge),
+                                    style: Theme.of(context)
+                                        .textTheme
+                                        .titleLarge!
+                                        .copyWith(fontWeight: FontWeight.w400)),
                               ),
                               SizedBox(
                                 height: 20,
@@ -165,7 +196,9 @@ class _ProjectsMobileState extends State<ProjectsMobile> {
                                             'Select a project to see details',
                                         style: Theme.of(context)
                                             .textTheme
-                                            .titleLarge),
+                                            .titleLarge!
+                                            .copyWith(
+                                                fontWeight: FontWeight.w400)),
                                   ),
                                 ],
                               ),
@@ -184,7 +217,9 @@ class _ProjectsMobileState extends State<ProjectsMobile> {
                                     Text("Githhub",
                                         style: Theme.of(context)
                                             .textTheme
-                                            .titleLarge),
+                                            .titleLarge!
+                                            .copyWith(
+                                                fontWeight: FontWeight.w400)),
                                     Container(
                                       height: 2,
                                       width: 55,
@@ -232,7 +267,7 @@ class _ProjectsMobileState extends State<ProjectsMobile> {
                     children: [
                       Container(
                         width: 1,
-                        height: 200,
+                        height: 250,
                         decoration: const BoxDecoration(
                             gradient: LinearGradient(
                           colors: [Colors.yellow, Colors.blue],
@@ -267,7 +302,7 @@ class _ProjectsMobileState extends State<ProjectsMobile> {
                                               .textTheme
                                               .titleLarge!
                                               .copyWith(
-                                                  fontWeight: FontWeight.w500),
+                                                  fontWeight: FontWeight.w400),
                                         ),
                                         Container(
                                           height: 2,

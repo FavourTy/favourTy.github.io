@@ -1,5 +1,5 @@
 import 'package:favourty/constants/theme/theme_provider.dart';
-import 'package:favourty/mobile/all_mobile.dart';
+import 'package:favourty/views/splash_screen.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 
@@ -17,10 +17,9 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      debugShowCheckedModeBanner: false,
-      title: 'Flutter Demo',
-      theme: Provider.of<ThemeProvider>(context).themeData,
-      home: AllMobile(),
-    );
+        debugShowCheckedModeBanner: false,
+        title: 'Flutter Demo',
+        theme: Provider.of<ThemeProvider>(context).themeData,
+        home: SplashScreen());
   }
 }

@@ -17,7 +17,6 @@ class _HomeMobileState extends State<HomeMobile> {
   Widget build(BuildContext context) {
     return SizedBox(
       key: widget.homeKey,
-      height: 680,
       child: Padding(
         padding: const EdgeInsets.only(left: 20, right: 20.0),
         child: Column(
@@ -77,12 +76,11 @@ class _HomeMobileState extends State<HomeMobile> {
             FadeInLeft(
                 child: AnimatedTextKit(
               animatedTexts: [
-                TyperAnimatedText(
-                    "Turning Imaginations Into Interactive Reality",
+                TyperAnimatedText("Building Scalable,Beautiful Apps",
                     textStyle: Theme.of(context).textTheme.headlineSmall),
-                TyperAnimatedText("Bringing your ideas to life through code",
+                TyperAnimatedText("Solving Problems with Flutter Magic",
                     textStyle: Theme.of(context).textTheme.headlineSmall),
-                TyperAnimatedText("Bringing your ideas to life through code",
+                TyperAnimatedText("Crafting User-Centric Experiences",
                     textStyle: Theme.of(context).textTheme.headlineSmall),
               ],
               pause: const Duration(milliseconds: 1000),
