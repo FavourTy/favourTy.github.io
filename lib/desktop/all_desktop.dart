@@ -36,21 +36,6 @@ class _AllDesktopState extends State<AllDesktop> {
       debugPrint("Context is null for key: $key");
     }
   }
-  // void _scrollSection(GlobalKey key) {
-  //   final context = key.currentContext;
-  //   if (context != null) {
-  //     _scrollController.position.ensureVisible(
-  //       context.findRenderObject()!,
-  //       duration: Duration(seconds: 1),
-  //       curve: Curves.easeInOut,
-  //     );
-  //   }
-  // }
-  // void _scrollSection(GlobalKey key) {
-  //   Scrollable.ensureVisible(key.currentContext!,
-  //       duration: Duration(seconds: 1), curve: Curves.easeInOut);
-  //   // _scaffoldKey.currentState!.closeEndDrawer();
-  // }
 
   @override
   Widget build(BuildContext context) {
