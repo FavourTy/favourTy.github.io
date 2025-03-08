@@ -1,6 +1,6 @@
 # favourty
 
-A new Flutter project.
+A new Portfolio built 
 
 ## Getting Started
 
