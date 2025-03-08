@@ -39,20 +39,24 @@ class _ContactMobileState extends State<ContactMobile> {
                   width: 5,
                 ),
                 SizedBox(
-                  width: 50,
-                  height: 50,
+                  width: 30,
+                  height: 30,
                   child: Image.asset(AppAssets.inbox),
                 )
               ],
             ),
             SizedBox(height: 30),
             Text(
-              'Thanks for stopping by! '
-              'I\'m always on the lookout for new and exciting opportunities. '
-              ' If you\'re interested in learning more about my work or have an opportunity you\'d like to discuss, '
-              'feel free to reach out. Let\'s chat about how we can bring your project to life!',
-              style: Theme.of(context).textTheme.titleLarge,
-              maxLines: 7,
+              "Thank you for visiting my portfolio! "
+              "I'm always open to new opportunities, collaborations, and discussions about exciting projects. "
+              "Whether you have an idea you'd like to bring to life, a problem you need solving, or just want to connect, "
+              "\nI'd love to hear from you. Let's work together to create something extraordinary! "
+              "Feel free to reach out via email or connect with me on social media. Looking forward to hearing from you!",
+              style: Theme.of(context)
+                  .textTheme
+                  .titleLarge!
+                  .copyWith(fontWeight: FontWeight.w400),
+              maxLines: 20,
               overflow: TextOverflow.ellipsis,
               textAlign: TextAlign.justify,
               softWrap: true,

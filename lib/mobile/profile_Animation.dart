@@ -25,8 +25,9 @@ class _MobileProfileAnimationState extends State<MobileProfileAnimation>
 
   @override
   void dispose() {
-    super.dispose();
+    _controller.stop(); // Stop the controller before disposing it
     _controller.dispose();
+    super.dispose();
   }
 
   @override
