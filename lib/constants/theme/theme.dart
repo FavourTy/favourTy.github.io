@@ -19,38 +19,45 @@ class AppTheme {
       drawerTheme:
           DrawerThemeData(backgroundColor: AppColors.lightModeBackgroundColor),
       textTheme: TextTheme(
-          headlineLarge: TextStyle(
-              fontFamily: "Rubik Moonrocks",
-              fontSize: 20,
-              fontWeight: FontWeight.w700,
-              color: AppColors.lightmodeTextColor),
-          headlineSmall: TextStyle(
-              fontFamily: "Rubik",
-              fontSize: 18.5,
-              color: AppColors.lightmodeTextColor,
-              decoration: TextDecoration.underline,
-              decorationColor: AppColors.lightModeToolsColor,
-              decorationThickness: 2.0),
-          headlineMedium: TextStyle(
-              fontSize: 33,
-              fontFamily: "Rubik",
-              fontWeight: FontWeight.w500,
-              color: AppColors.lightModeToolsColor),
-          bodyMedium: TextStyle(
-              fontFamily: "Lobster",
-              fontSize: 38,
-              fontWeight: FontWeight.w700,
-              color: AppColors.lightmodeTextColor),
-          titleLarge: TextStyle(
-              fontFamily: "Rubik",
-              fontWeight: FontWeight.bold,
-              fontSize: 15,
-              color: AppColors.lightmodeTextColor),
-          bodyLarge: TextStyle(
-              fontFamily: "Lobster",
-              fontSize: 15,
-              fontWeight: FontWeight.w500,
-              color: AppColors.lightmodeTextColor)));
+        headlineLarge: TextStyle(
+            fontFamily: "Rubik Moonrocks",
+            fontSize: 20,
+            fontWeight: FontWeight.w700,
+            color: AppColors.lightmodeTextColor),
+        headlineSmall: TextStyle(
+            fontFamily: "Rubik",
+            fontSize: 18.5,
+            color: AppColors.lightmodeTextColor,
+            decoration: TextDecoration.underline,
+            decorationColor: AppColors.lightModeToolsColor,
+            decorationThickness: 2.0,
+            fontWeight: FontWeight.w400),
+        headlineMedium: TextStyle(
+            fontSize: 33,
+            fontFamily: "Rubik",
+            fontWeight: FontWeight.w500,
+            color: AppColors.lightModeToolsColor),
+        bodyMedium: TextStyle(
+            fontFamily: "Lobster",
+            fontSize: 32,
+            fontWeight: FontWeight.w400,
+            color: AppColors.lightmodeTextColor),
+        titleLarge: TextStyle(
+            fontFamily: "Rubik",
+            fontWeight: FontWeight.bold,
+            fontSize: 15,
+            color: AppColors.lightmodeTextColor),
+        bodyLarge: TextStyle(
+            fontFamily: "Lobster",
+            fontSize: 15,
+            fontWeight: FontWeight.w500,
+            color: AppColors.lightmodeTextColor),
+        bodySmall: TextStyle(
+            fontFamily: "Tangerine",
+            fontSize: 15,
+            fontWeight: FontWeight.w500,
+            color: AppColors.lightmodeTextColor),
+      ));
 
   //darkmode
   static final ThemeData darkmode = ThemeData(

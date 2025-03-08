@@ -67,7 +67,11 @@ class _AllMobileState extends State<AllMobile> {
                             homeKey: _homeKey,
                           ),
                           SizedBox(
-                            height: 40,
+                            height: 50,
+                          ),
+                          MyStyledDivider(),
+                          SizedBox(
+                            height: 20,
                           ),
                           AboutMobile(
                             aboutMeKey: _aboutKey,

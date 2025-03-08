@@ -166,7 +166,6 @@ class _ProjectsMobileState extends State<ProjectsMobile> {
                                     maxLines: 20,
                                     // overflow: TextOverflow.ellipsis,
                                     softWrap: true,
-                                    textAlign: TextAlign.justify,
                                     style: Theme.of(context)
                                         .textTheme
                                         .titleLarge!

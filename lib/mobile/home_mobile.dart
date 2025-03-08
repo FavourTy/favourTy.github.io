@@ -18,10 +18,13 @@ class _HomeMobileState extends State<HomeMobile> {
     return SizedBox(
       key: widget.homeKey,
       child: Padding(
-        padding: const EdgeInsets.only(left: 20, right: 20.0),
+        padding: const EdgeInsets.only(left: 35, right: 35),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            SizedBox(
+              height: 20,
+            ),
             FadeInLeft(
               duration: const Duration(milliseconds: 1400),
               child: Text(
@@ -77,11 +80,20 @@ class _HomeMobileState extends State<HomeMobile> {
                 child: AnimatedTextKit(
               animatedTexts: [
                 TyperAnimatedText("Building Scalable,Beautiful Apps",
-                    textStyle: Theme.of(context).textTheme.headlineSmall),
+                    textStyle: Theme.of(context)
+                        .textTheme
+                        .headlineSmall!
+                        .copyWith(fontSize: 15.0)),
                 TyperAnimatedText("Solving Problems with Flutter Magic",
-                    textStyle: Theme.of(context).textTheme.headlineSmall),
+                    textStyle: Theme.of(context)
+                        .textTheme
+                        .headlineSmall!
+                        .copyWith(fontSize: 15.0)),
                 TyperAnimatedText("Crafting User-Centric Experiences",
-                    textStyle: Theme.of(context).textTheme.headlineSmall),
+                    textStyle: Theme.of(context)
+                        .textTheme
+                        .headlineSmall!
+                        .copyWith(fontSize: 15.0)),
               ],
               pause: const Duration(milliseconds: 1000),
               displayFullTextOnTap: true,
