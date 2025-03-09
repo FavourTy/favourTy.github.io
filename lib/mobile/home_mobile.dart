@@ -101,7 +101,7 @@ class _HomeMobileState extends State<HomeMobile> {
               repeatForever: true,
             )),
             SizedBox(
-              height: 30,
+              height: 25,
             ),
             SizedBox(height: 300, child: MobileProfileAnimation())
           ],

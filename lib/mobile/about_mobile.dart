@@ -104,6 +104,9 @@ class _AboutMobileState extends State<AboutMobile> {
               ),
             ),
             SizedBox(
+              height: 10,
+            ),
+            SizedBox(
               height: 100,
               child: Stack(
                 children: [
