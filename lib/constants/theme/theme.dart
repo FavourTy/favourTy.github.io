@@ -76,8 +76,8 @@ class AppTheme {
     textTheme: TextTheme(
       bodyMedium: TextStyle(
           fontFamily: "Lobster",
-          fontSize: 36,
-          fontWeight: FontWeight.w700,
+          fontSize: 32,
+          fontWeight: FontWeight.w400,
           color: AppColors.darkmodeTextColor),
       headlineLarge: TextStyle(
           fontFamily: "Rubik Moonrocks",
@@ -95,6 +95,7 @@ class AppTheme {
           color: AppColors.darkmodeTextColor,
           decoration: TextDecoration.underline,
           decorationColor: AppColors.darkmodeToolsColor,
+          fontWeight: FontWeight.w400,
           decorationThickness: 2.0),
       titleLarge: TextStyle(
           fontFamily: "Rubik",
