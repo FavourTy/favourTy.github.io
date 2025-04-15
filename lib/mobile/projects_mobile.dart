@@ -251,40 +251,46 @@ class _ProjectsMobileState extends State<ProjectsMobile> {
                                   SizedBox(
                                     width: 15.0,
                                   ),
-                                  GestureDetector(
-                                    onTap: () {
-                                      js.context.callMethod("open",
-                                          [selectedProject?.demo ?? '']);
-                                    },
-                                    child: Column(
-                                      children: [
-                                        Text("Demo",
-                                            style: Theme.of(context)
-                                                .textTheme
-                                                .titleLarge!
-                                                .copyWith(
-                                                    fontWeight:
-                                                        FontWeight.w400)),
-                                        Container(
-                                          height: 2,
-                                          width: 55,
-                                          decoration: BoxDecoration(
-                                              borderRadius:
-                                                  BorderRadius.circular(5),
-                                              gradient: const LinearGradient(
-                                                  end: Alignment.centerRight,
-                                                  stops: [
-                                                    0.2,
-                                                    1
-                                                  ],
-                                                  colors: [
-                                                    Colors.yellow,
-                                                    Colors.blue
-                                                  ])),
+                                  selectedProject?.demo != null &&
+                                          selectedProject!.demo!.isNotEmpty
+                                      ? GestureDetector(
+                                          onTap: () {
+                                            js.context.callMethod("open",
+                                                [selectedProject!.demo!]);
+                                          },
+                                          child: Column(
+                                            children: [
+                                              Text("Demo",
+                                                  style: Theme.of(context)
+                                                      .textTheme
+                                                      .titleLarge!
+                                                      .copyWith(
+                                                          fontWeight:
+                                                              FontWeight.w400)),
+                                              Container(
+                                                height: 2,
+                                                width: 55,
+                                                decoration: BoxDecoration(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            5),
+                                                    gradient:
+                                                        const LinearGradient(
+                                                            end: Alignment
+                                                                .centerRight,
+                                                            stops: [
+                                                          0.2,
+                                                          1
+                                                        ],
+                                                            colors: [
+                                                          Colors.yellow,
+                                                          Colors.blue
+                                                        ])),
+                                              )
+                                            ],
+                                          ),
                                         )
-                                      ],
-                                    ),
-                                  )
+                                      : SizedBox.shrink()
                                 ],
                               ),
                             ],
