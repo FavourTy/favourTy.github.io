@@ -22,10 +22,15 @@ class _AllMobileState extends State<AllMobile> {
   bool _isDrawerOpen = false;
   final ScrollController _scrollController = ScrollController();
   //final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
-  void _scrollSection(GlobalKey key) {
-    Scrollable.ensureVisible(key.currentContext!,
-        duration: Duration(seconds: 1), curve: Curves.easeInOut);
-    // _scaffoldKey.currentState!.closeEndDrawer();
+  void _scrollSectionAndCloseDrawer(GlobalKey key) {
+    setState(() {
+      _isDrawerOpen = false;
+    });
+    Scrollable.ensureVisible(
+      key.currentContext!,
+      duration: const Duration(seconds: 1),
+      curve: Curves.easeInOut,
+    );
   }
 
   void _toggleDrawer() {
@@ -114,10 +119,14 @@ class _AllMobileState extends State<AllMobile> {
                       bottomLeft: Radius.circular(12),
                     ),
                     child: MobileDrawer(
-                        onHomePressed: () => _scrollSection(_homeKey),
-                        onAboutPressed: () => _scrollSection(_aboutKey),
-                        onContactPressed: () => _scrollSection(_contactKey),
-                        onProjectPressed: () => _scrollSection(_projectKey))))
+                        onHomePressed: () =>
+                            _scrollSectionAndCloseDrawer(_homeKey),
+                        onAboutPressed: () =>
+                            _scrollSectionAndCloseDrawer(_aboutKey),
+                        onContactPressed: () =>
+                            _scrollSectionAndCloseDrawer(_contactKey),
+                        onProjectPressed: () =>
+                            _scrollSectionAndCloseDrawer(_projectKey))))
         ],
       ),
     );
