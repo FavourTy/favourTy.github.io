@@ -40609,10 +40609,10 @@ return A.cc(A.a([new A.a0(r.a.a,40,new A.cr(B.Aj,A.c8(A.a([q,A.c8(A.a([new A.pe(
 A.vv.prototype={
 a9(){return new A.MQ()}}
 A.MQ.prototype={
-N(a){var s=null,r=this.a.c,q=A.mL(A.bz("Hola,",s,s,s,A.a1(a).p1.z.dJ(30),s,s,s),B.c5),p=A.mL(A.bz("I'm",s,s,s,A.a1(a).p1.z.dJ(30),s,s,s),B.c5),o=A.a1(a).p1.z.dJ(30),n=t.u6,m=t.p
+N(a){var s=null,r=this.a.c,q=A.mL(A.bz("Hola,",s,s,s,A.a1(a).p1.r.dJ(28),s,s,s),B.c5),p=A.mL(A.bz("I'm",s,s,s,A.a1(a).p1.r.dJ(28),s,s,s),B.c5),o=A.a1(a).p1.r.dJ(28),n=t.u6,m=t.p
 o=A.c8(A.a([p,new A.a0(10,s,s,s),A.alu(A.hC(A.a([A.ua("FavourTy",A.a([B.aV,B.a2,B.af],t.O),o)],n),!1,s,B.V,!0,!1),B.c5)],m),B.w,B.P,B.B)
 p=A.cf(0,1400)
-return new A.a0(s,s,new A.cr(B.e8,A.cc(A.a([new A.a0(s,20,s,s),q,new A.a0(s,10,s,s),o,new A.a0(s,10,s,s),A.mL(A.bz("a flutter developer.",s,s,s,A.a1(a).p1.z.dJ(30),s,s,s),p),new A.a0(s,32,s,s),A.mL(A.hC(A.a([A.yL("Building Scalable,Beautiful Apps",A.a1(a).p1.f.dJ(15)),A.yL("Solving Problems with Flutter Magic",A.a1(a).p1.f.dJ(15)),A.yL("Crafting User-Centric Experiences",A.a1(a).p1.f.dJ(15))],n),!0,s,B.V,!0,!0),B.k2),new A.a0(s,25,s,s),new A.a0(s,300,new A.wk(s),s)],m),B.O),s),r)}}
+return new A.a0(s,s,new A.cr(B.e8,A.cc(A.a([new A.a0(s,20,s,s),q,new A.a0(s,10,s,s),o,new A.a0(s,10,s,s),A.mL(A.bz("a flutter developer.",s,s,s,A.a1(a).p1.r.dJ(28),s,s,s),p),new A.a0(s,32,s,s),A.mL(A.hC(A.a([A.yL("Building Scalable,Beautiful Apps",A.a1(a).p1.f.dJ(15)),A.yL("Solving Problems with Flutter Magic",A.a1(a).p1.f.dJ(15)),A.yL("Crafting User-Centric Experiences",A.a1(a).p1.f.dJ(15))],n),!0,s,B.V,!0,!0),B.k2),new A.a0(s,25,s,s),new A.a0(s,300,new A.wk(s),s)],m),B.O),s),r)}}
 A.wk.prototype={
 a9(){return new A.NB(null,null)}}
 A.NB.prototype={
