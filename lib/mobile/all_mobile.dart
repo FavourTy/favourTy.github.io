@@ -6,6 +6,7 @@ import 'package:favourty/mobile/header_mobile.dart';
 import 'package:favourty/mobile/home_mobile.dart';
 import 'package:favourty/mobile/projects_mobile.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class AllMobile extends StatefulWidget {
   const AllMobile({super.key});
@@ -37,6 +38,33 @@ class _AllMobileState extends State<AllMobile> {
     setState(() {
       _isDrawerOpen = !_isDrawerOpen;
     });
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+
+    final brightness = Theme.of(context).brightness;
+
+    if (brightness == Brightness.dark) {
+      SystemChrome.setSystemUIOverlayStyle(
+        const SystemUiOverlayStyle(
+          statusBarColor: Colors.transparent,
+          statusBarIconBrightness: Brightness.light,
+          systemNavigationBarColor: Colors.black,
+          systemNavigationBarIconBrightness: Brightness.light,
+        ),
+      );
+    } else {
+      SystemChrome.setSystemUIOverlayStyle(
+        const SystemUiOverlayStyle(
+          statusBarColor: Colors.transparent,
+          statusBarIconBrightness: Brightness.dark,
+          systemNavigationBarColor: Colors.white,
+          systemNavigationBarIconBrightness: Brightness.dark,
+        ),
+      );
+    }
   }
 
   @override
