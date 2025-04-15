@@ -52,7 +52,7 @@ class _AboutDesktopState extends State<AboutDesktop> {
                     child: Column(
                       children: [
                         Text(
-                          "Hola! I'm FavourTy (Favour-Tee-Why), a passionate Flutter developer recognized for adding a touch of enchantment to my code. I specialize in crafting outstanding applications and am enthusiastic about collaborating with bright minds in the Flutter development community to enhance my continuous learning journey.",
+                          "Hola! I'm FavourTy (Favour-Tee-Why), a passionate Flutter developer recognized for adding a touch of enchantment to my code. I specialize in crafting outstanding applications and I am enthusiastic about collaborating with bright minds in the Flutter development community to enhance my continuous learning journey.",
                           maxLines: 20,
                           textAlign: TextAlign.justify,
                           overflow: TextOverflow.ellipsis,
