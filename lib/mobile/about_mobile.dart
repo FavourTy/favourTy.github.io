@@ -51,7 +51,7 @@ class _AboutMobileState extends State<AboutMobile> {
             Padding(
               padding: const EdgeInsets.only(left: 10, right: 10),
               child: Text(
-                "  Hola! I'm FavourTy (Favour-Tee-Why), a passionate Flutter developer recognized for adding a touch of enchantment to my code. I specialize in crafting outstanding applications and am enthusiastic about collaborating with bright minds in the Flutter development community to enhance my continuous learning journey.",
+                "  Hola! I'm FavourTy (Favour-Tee-Why), a passionate Flutter developer recognized for adding a touch of enchantment to my code. I specialize in crafting outstanding applications and I'm enthusiastic about collaborating with bright minds in the Flutter development community to enhance my continuous learning journey.",
                 maxLines: 30,
                 overflow: TextOverflow.ellipsis,
                 softWrap: true,
