@@ -30,8 +30,8 @@ class _HomeMobileState extends State<HomeMobile> {
               child: Text("Hola,",
                   style: Theme.of(context)
                       .textTheme
-                      .bodyMedium!
-                      .copyWith(fontSize: 30)),
+                      .titleLarge!
+                      .copyWith(fontSize: 28)),
             ),
             SizedBox(
               height: 10,
@@ -43,8 +43,8 @@ class _HomeMobileState extends State<HomeMobile> {
                     child: Text("I'm",
                         style: Theme.of(context)
                             .textTheme
-                            .bodyMedium!
-                            .copyWith(fontSize: 30))),
+                            .titleLarge!
+                            .copyWith(fontSize: 28))),
                 SizedBox(
                   width: 10,
                 ),
@@ -56,8 +56,8 @@ class _HomeMobileState extends State<HomeMobile> {
                         "FavourTy",
                         textStyle: Theme.of(context)
                             .textTheme
-                            .bodyMedium!
-                            .copyWith(fontSize: 30),
+                            .titleLarge!
+                            .copyWith(fontSize: 28),
                         colors: [
                           AppColors.darkmodeToolsColor,
                           AppColors.gradientColor2,
@@ -78,8 +78,8 @@ class _HomeMobileState extends State<HomeMobile> {
               child: Text("a flutter developer.",
                   style: Theme.of(context)
                       .textTheme
-                      .bodyMedium!
-                      .copyWith(fontSize: 30)),
+                      .titleLarge!
+                      .copyWith(fontSize: 28)),
             ),
             SizedBox(
               height: 32,
