@@ -27,10 +27,11 @@ class _HomeMobileState extends State<HomeMobile> {
             ),
             FadeInLeft(
               duration: const Duration(milliseconds: 1400),
-              child: Text(
-                "Hola,",
-                style: Theme.of(context).textTheme.bodyMedium,
-              ),
+              child: Text("Hola,",
+                  style: Theme.of(context)
+                      .textTheme
+                      .bodyMedium!
+                      .copyWith(fontSize: 30)),
             ),
             SizedBox(
               height: 10,
@@ -39,10 +40,11 @@ class _HomeMobileState extends State<HomeMobile> {
               children: [
                 FadeInLeft(
                     duration: const Duration(milliseconds: 1400),
-                    child: Text(
-                      "I'm",
-                      style: Theme.of(context).textTheme.bodyMedium,
-                    )),
+                    child: Text("I'm",
+                        style: Theme.of(context)
+                            .textTheme
+                            .bodyMedium!
+                            .copyWith(fontSize: 30))),
                 SizedBox(
                   width: 10,
                 ),
@@ -52,7 +54,10 @@ class _HomeMobileState extends State<HomeMobile> {
                     animatedTexts: [
                       ColorizeAnimatedText(
                         "FavourTy",
-                        textStyle: Theme.of(context).textTheme.bodyMedium!,
+                        textStyle: Theme.of(context)
+                            .textTheme
+                            .bodyMedium!
+                            .copyWith(fontSize: 30),
                         colors: [
                           AppColors.darkmodeToolsColor,
                           AppColors.gradientColor2,
@@ -71,7 +76,10 @@ class _HomeMobileState extends State<HomeMobile> {
             FadeInLeft(
               duration: Duration(milliseconds: 1400),
               child: Text("a flutter developer.",
-                  style: Theme.of(context).textTheme.bodyMedium),
+                  style: Theme.of(context)
+                      .textTheme
+                      .bodyMedium!
+                      .copyWith(fontSize: 30)),
             ),
             SizedBox(
               height: 32,
