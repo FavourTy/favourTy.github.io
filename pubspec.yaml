@@ -48,3 +48,10 @@ flutter:
     - family: Lobster
       fonts:
         - asset: assets/fonts/Lobster-Regular.ttf
+
+    - family: Tangerine
+      fonts:
+        - asset: assets/fonts/Tangerine-Regular.ttf
+        - asset: assets/fonts/Tangerine-Bold.ttf
+          weight: 700
+        

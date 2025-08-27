@@ -18,16 +18,20 @@ class _HomeMobileState extends State<HomeMobile> {
     return SizedBox(
       key: widget.homeKey,
       child: Padding(
-        padding: const EdgeInsets.only(left: 20, right: 20.0),
+        padding: const EdgeInsets.only(left: 35, right: 35),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           children: [
+            SizedBox(
+              height: 20,
+            ),
             FadeInLeft(
               duration: const Duration(milliseconds: 1400),
-              child: Text(
-                "Hola,",
-                style: Theme.of(context).textTheme.bodyMedium,
-              ),
+              child: Text("Hola,",
+                  style: Theme.of(context)
+                      .textTheme
+                      .titleLarge!
+                      .copyWith(fontSize: 28)),
             ),
             SizedBox(
               height: 10,
@@ -36,10 +40,11 @@ class _HomeMobileState extends State<HomeMobile> {
               children: [
                 FadeInLeft(
                     duration: const Duration(milliseconds: 1400),
-                    child: Text(
-                      "I'm",
-                      style: Theme.of(context).textTheme.bodyMedium,
-                    )),
+                    child: Text("I'm",
+                        style: Theme.of(context)
+                            .textTheme
+                            .titleLarge!
+                            .copyWith(fontSize: 28))),
                 SizedBox(
                   width: 10,
                 ),
@@ -49,7 +54,10 @@ class _HomeMobileState extends State<HomeMobile> {
                     animatedTexts: [
                       ColorizeAnimatedText(
                         "FavourTy",
-                        textStyle: Theme.of(context).textTheme.bodyMedium!,
+                        textStyle: Theme.of(context)
+                            .textTheme
+                            .titleLarge!
+                            .copyWith(fontSize: 28),
                         colors: [
                           AppColors.darkmodeToolsColor,
                           AppColors.gradientColor2,
@@ -68,7 +76,10 @@ class _HomeMobileState extends State<HomeMobile> {
             FadeInLeft(
               duration: Duration(milliseconds: 1400),
               child: Text("a flutter developer.",
-                  style: Theme.of(context).textTheme.bodyMedium),
+                  style: Theme.of(context)
+                      .textTheme
+                      .titleLarge!
+                      .copyWith(fontSize: 28)),
             ),
             SizedBox(
               height: 32,
@@ -77,11 +88,20 @@ class _HomeMobileState extends State<HomeMobile> {
                 child: AnimatedTextKit(
               animatedTexts: [
                 TyperAnimatedText("Building Scalable,Beautiful Apps",
-                    textStyle: Theme.of(context).textTheme.headlineSmall),
+                    textStyle: Theme.of(context)
+                        .textTheme
+                        .headlineSmall!
+                        .copyWith(fontSize: 15.0)),
                 TyperAnimatedText("Solving Problems with Flutter Magic",
-                    textStyle: Theme.of(context).textTheme.headlineSmall),
+                    textStyle: Theme.of(context)
+                        .textTheme
+                        .headlineSmall!
+                        .copyWith(fontSize: 15.0)),
                 TyperAnimatedText("Crafting User-Centric Experiences",
-                    textStyle: Theme.of(context).textTheme.headlineSmall),
+                    textStyle: Theme.of(context)
+                        .textTheme
+                        .headlineSmall!
+                        .copyWith(fontSize: 15.0)),
               ],
               pause: const Duration(milliseconds: 1000),
               displayFullTextOnTap: true,
@@ -89,7 +109,7 @@ class _HomeMobileState extends State<HomeMobile> {
               repeatForever: true,
             )),
             SizedBox(
-              height: 30,
+              height: 25,
             ),
             SizedBox(height: 300, child: MobileProfileAnimation())
           ],

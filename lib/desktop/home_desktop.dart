@@ -29,13 +29,16 @@ class _HomeDesktopState extends State<HomeDesktop> {
               children: [
                 FadeInLeft(
                   duration: const Duration(milliseconds: 1400),
-                  child: Text(
-                    "Hola,",
-                    style: Theme.of(context)
-                        .textTheme
-                        .bodyMedium!
-                        .copyWith(fontSize: 45),
-                  ),
+                  child: Text("Hola,",
+                      style: Theme.of(context)
+                          .textTheme
+                          .titleLarge!
+                          .copyWith(fontSize: 43)
+                      // style: Theme.of(context)
+                      //     .textTheme
+                      //     .bodyMedium!
+                      //     .copyWith(fontSize: 45),
+                      ),
                 ),
                 SizedBox(
                   height: 20,
@@ -44,13 +47,15 @@ class _HomeDesktopState extends State<HomeDesktop> {
                   children: [
                     FadeInLeft(
                         duration: const Duration(milliseconds: 1400),
-                        child: Text(
-                          "I'm",
-                          style: Theme.of(context)
-                              .textTheme
-                              .bodyMedium!
-                              .copyWith(fontSize: 45),
-                        )),
+                        child: Text("I'm",
+                            // style: Theme.of(context)
+                            //     .textTheme
+                            //     .bodyMedium!
+                            //     .copyWith(fontSize: 45),
+                            style: Theme.of(context)
+                                .textTheme
+                                .titleLarge!
+                                .copyWith(fontSize: 43))),
                     SizedBox(
                       width: 10,
                     ),
@@ -60,10 +65,14 @@ class _HomeDesktopState extends State<HomeDesktop> {
                         animatedTexts: [
                           ColorizeAnimatedText(
                             "FavourTy",
+                            // textStyle: Theme.of(context)
+                            //     .textTheme
+                            //     .bodyMedium!
+                            //     .copyWith(fontSize: 45),
                             textStyle: Theme.of(context)
                                 .textTheme
-                                .bodyMedium!
-                                .copyWith(fontSize: 45),
+                                .titleLarge!
+                                .copyWith(fontSize: 43),
                             colors: [
                               AppColors.darkmodeToolsColor,
                               AppColors.gradientColor2,
@@ -81,13 +90,16 @@ class _HomeDesktopState extends State<HomeDesktop> {
                 ),
                 FadeInLeft(
                   duration: Duration(milliseconds: 1400),
-                  child: Text(
-                    "a flutter developer.",
-                    style: Theme.of(context)
-                        .textTheme
-                        .bodyMedium!
-                        .copyWith(fontSize: 45),
-                  ),
+                  child: Text("a flutter developer.",
+                      style: Theme.of(context)
+                          .textTheme
+                          .titleLarge!
+                          .copyWith(fontSize: 43)
+                      // style: Theme.of(context)
+                      //     .textTheme
+                      //     .bodyMedium!
+                      //     .copyWith(fontSize: 45),
+                      ),
                 ),
                 SizedBox(
                   height: 40,

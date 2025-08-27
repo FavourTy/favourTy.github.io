@@ -58,7 +58,6 @@ class _ContactMobileState extends State<ContactMobile> {
                   .copyWith(fontWeight: FontWeight.w400),
               maxLines: 20,
               overflow: TextOverflow.ellipsis,
-              textAlign: TextAlign.justify,
               softWrap: true,
             ),
             SizedBox(height: 30),

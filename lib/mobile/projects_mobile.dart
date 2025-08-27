@@ -21,35 +21,41 @@ class _ProjectsMobileState extends State<ProjectsMobile> {
           'Developed a scheduler app to help students efficiently manage their daily academic activities and track completed tasks. The app allows users to create, update, and delete tasks, set reminders, and visualize their progress through a clean and intuitive interface. It ensures students stay organized and productive throughout their academic journey.',
       mitechnologies: "Flutter, Firebase, MVVM Architecture, Provider, Sqflite",
       migithublink: "https://github.com/FavourTy/sca_student_pal",
+      demo:
+          "https://drive.google.com/file/d/1AytDLAWAYp-_7F_d8mCutN3UPcg-ujtQ/view?usp=sharing",
     ),
     Project(
-      title: 'Floww',
-      misubtitle:
-          'Built a real-time chat application enabling users to send and receive messages instantly. The app features user authentication, chat history, and profile images, providing a seamless communication experience. It ensures secure and efficient messaging with a modern and responsive design.',
-      mitechnologies: "Flutter, Firebase, MVVM Architecture, Provider",
-      migithublink: "https://github.com/FavourTy/smart_/tree/main/floww",
-    ),
+        title: 'Floww',
+        misubtitle:
+            'Built a real-time chat application enabling users to send and receive messages instantly. The app features user authentication, chat history, and profile images, providing a seamless communication experience. It ensures secure and efficient messaging with a modern and responsive design.',
+        mitechnologies: "Flutter, Firebase, MVVM Architecture, Provider",
+        migithublink: "https://github.com/FavourTy/smart_/tree/main/floww",
+        demo:
+            "https://drive.google.com/file/d/1-eBV-8uJkL6xrsl8jbp-RGsfFwMpQFzz/view?usp=sharing"),
     Project(
-      title: 'Weather App',
-      misubtitle:
-          'Developed a weather app that provides real-time weather updates based on the user’s current location. Users can also fetch weather information for all 36 states of Nigeria, including the Federal Capital Territory (FCT). The app offers accurate and up-to-date weather forecasts with a user-friendly interface.',
-      mitechnologies: "Flutter, OpenWeatherMap API, Provider",
-      migithublink: "https://github.com/FavourTy/smart_/tree/main/weather_app",
-    ),
+        title: 'Weather App',
+        misubtitle:
+            'Developed a weather app that provides real-time weather updates based on the user’s current location. Users can also fetch weather information for all 36 states of Nigeria, including the Federal Capital Territory (FCT). The app offers accurate and up-to-date weather forecasts with a user-friendly interface.',
+        mitechnologies: "Flutter, OpenWeatherMap API, Provider",
+        migithublink:
+            "https://github.com/FavourTy/smart_/tree/main/weather_app",
+        demo: "https://github.com/FavourTy/smart_/tree/main/weather_app"),
     Project(
-      title: 'Shopper',
-      misubtitle:
-          'Created a shopping application utilizing the Fake Store API, offering a seamless shopping experience. The app includes user authentication, product categorization, and price conversion. Users can browse products, add them to their cart, and complete purchases with ease.',
-      mitechnologies:
-          "Flutter, Fake Store API, Object-Oriented Programming (OOP)",
-      migithublink: "https://github.com/FavourTy/shopper_app",
-    ),
+        title: 'Shopper',
+        misubtitle:
+            'Created a shopping application utilizing the Fake Store API, offering a seamless shopping experience. The app includes user authentication, product categorization, and price conversion. Users can browse products, add them to their cart, and complete purchases with ease.',
+        mitechnologies:
+            "Flutter, Fake Store API, Object-Oriented Programming (OOP)",
+        migithublink: "https://github.com/FavourTy/shopper_app",
+        demo:
+            "https://drive.google.com/file/d/1-jO04rm7jV4ky3C_k6E9abuXarKkzGSE/view?usp=sharing"),
     Project(
       title: 'My Portfolio',
       misubtitle:
           'Developed a dynamic and interactive portfolio website showcasing my projects, skills, and professional journey. The website offers visitors a comprehensive view of my accomplishments and areas of expertise, with a user-friendly interface and responsive design',
       mitechnologies: "Flutter-web, Dart, Material-UI",
       migithublink: "https://github.com/FavourTy/my_portfolio1",
+      demo: "https://favourTy.github.io",
     ),
     Project(
       title: 'Ocr App',
@@ -166,7 +172,6 @@ class _ProjectsMobileState extends State<ProjectsMobile> {
                                     maxLines: 20,
                                     // overflow: TextOverflow.ellipsis,
                                     softWrap: true,
-                                    textAlign: TextAlign.justify,
                                     style: Theme.of(context)
                                         .textTheme
                                         .titleLarge!
@@ -205,41 +210,89 @@ class _ProjectsMobileState extends State<ProjectsMobile> {
                               SizedBox(
                                 height: 20,
                               ),
-                              GestureDetector(
-                                onTap: () {
-                                  js.context.callMethod("open", [
-                                    selectedProject?.migithublink ??
-                                        'Select a project to see details'
-                                  ]);
-                                },
-                                child: Column(
-                                  children: [
-                                    Text("Githhub",
-                                        style: Theme.of(context)
-                                            .textTheme
-                                            .titleLarge!
-                                            .copyWith(
-                                                fontWeight: FontWeight.w400)),
-                                    Container(
-                                      height: 2,
-                                      width: 55,
-                                      decoration: BoxDecoration(
-                                          borderRadius:
-                                              BorderRadius.circular(5),
-                                          gradient: const LinearGradient(
-                                              end: Alignment.centerRight,
-                                              stops: [
-                                                0.2,
-                                                1
-                                              ],
-                                              colors: [
-                                                Colors.yellow,
-                                                Colors.blue
-                                              ])),
-                                    )
-                                  ],
-                                ),
-                              )
+                              Row(
+                                children: [
+                                  GestureDetector(
+                                    onTap: () {
+                                      js.context.callMethod("open", [
+                                        selectedProject?.migithublink ??
+                                            'Select a project to see details'
+                                      ]);
+                                    },
+                                    child: Column(
+                                      children: [
+                                        Text("Githhub",
+                                            style: Theme.of(context)
+                                                .textTheme
+                                                .titleLarge!
+                                                .copyWith(
+                                                    fontWeight:
+                                                        FontWeight.w400)),
+                                        Container(
+                                          height: 2,
+                                          width: 55,
+                                          decoration: BoxDecoration(
+                                              borderRadius:
+                                                  BorderRadius.circular(5),
+                                              gradient: const LinearGradient(
+                                                  end: Alignment.centerRight,
+                                                  stops: [
+                                                    0.2,
+                                                    1
+                                                  ],
+                                                  colors: [
+                                                    Colors.yellow,
+                                                    Colors.blue
+                                                  ])),
+                                        )
+                                      ],
+                                    ),
+                                  ),
+                                  SizedBox(
+                                    width: 15.0,
+                                  ),
+                                  selectedProject?.demo != null &&
+                                          selectedProject!.demo!.isNotEmpty
+                                      ? GestureDetector(
+                                          onTap: () {
+                                            js.context.callMethod("open",
+                                                [selectedProject!.demo!]);
+                                          },
+                                          child: Column(
+                                            children: [
+                                              Text("Demo",
+                                                  style: Theme.of(context)
+                                                      .textTheme
+                                                      .titleLarge!
+                                                      .copyWith(
+                                                          fontWeight:
+                                                              FontWeight.w400)),
+                                              Container(
+                                                height: 2,
+                                                width: 55,
+                                                decoration: BoxDecoration(
+                                                    borderRadius:
+                                                        BorderRadius.circular(
+                                                            5),
+                                                    gradient:
+                                                        const LinearGradient(
+                                                            end: Alignment
+                                                                .centerRight,
+                                                            stops: [
+                                                          0.2,
+                                                          1
+                                                        ],
+                                                            colors: [
+                                                          Colors.yellow,
+                                                          Colors.blue
+                                                        ])),
+                                              )
+                                            ],
+                                          ),
+                                        )
+                                      : SizedBox.shrink()
+                                ],
+                              ),
                             ],
                           ),
                         ),

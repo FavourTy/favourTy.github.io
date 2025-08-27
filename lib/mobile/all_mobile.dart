@@ -6,6 +6,7 @@ import 'package:favourty/mobile/header_mobile.dart';
 import 'package:favourty/mobile/home_mobile.dart';
 import 'package:favourty/mobile/projects_mobile.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 
 class AllMobile extends StatefulWidget {
   const AllMobile({super.key});
@@ -22,16 +23,48 @@ class _AllMobileState extends State<AllMobile> {
   bool _isDrawerOpen = false;
   final ScrollController _scrollController = ScrollController();
   //final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
-  void _scrollSection(GlobalKey key) {
-    Scrollable.ensureVisible(key.currentContext!,
-        duration: Duration(seconds: 1), curve: Curves.easeInOut);
-    // _scaffoldKey.currentState!.closeEndDrawer();
+  void _scrollSectionAndCloseDrawer(GlobalKey key) {
+    setState(() {
+      _isDrawerOpen = false;
+    });
+    Scrollable.ensureVisible(
+      key.currentContext!,
+      duration: const Duration(seconds: 1),
+      curve: Curves.easeInOut,
+    );
   }
 
   void _toggleDrawer() {
     setState(() {
       _isDrawerOpen = !_isDrawerOpen;
     });
+  }
+
+  @override
+  void didChangeDependencies() {
+    super.didChangeDependencies();
+
+    final brightness = Theme.of(context).brightness;
+
+    if (brightness == Brightness.dark) {
+      SystemChrome.setSystemUIOverlayStyle(
+        const SystemUiOverlayStyle(
+          statusBarColor: Colors.transparent,
+          statusBarIconBrightness: Brightness.light,
+          systemNavigationBarColor: Colors.black,
+          systemNavigationBarIconBrightness: Brightness.light,
+        ),
+      );
+    } else {
+      SystemChrome.setSystemUIOverlayStyle(
+        const SystemUiOverlayStyle(
+          statusBarColor: Colors.transparent,
+          statusBarIconBrightness: Brightness.dark,
+          systemNavigationBarColor: Colors.white,
+          systemNavigationBarIconBrightness: Brightness.dark,
+        ),
+      );
+    }
   }
 
   @override
@@ -67,7 +100,11 @@ class _AllMobileState extends State<AllMobile> {
                             homeKey: _homeKey,
                           ),
                           SizedBox(
-                            height: 40,
+                            height: 50,
+                          ),
+                          MyStyledDivider(),
+                          SizedBox(
+                            height: 20,
                           ),
                           AboutMobile(
                             aboutMeKey: _aboutKey,
@@ -110,10 +147,14 @@ class _AllMobileState extends State<AllMobile> {
                       bottomLeft: Radius.circular(12),
                     ),
                     child: MobileDrawer(
-                        onHomePressed: () => _scrollSection(_homeKey),
-                        onAboutPressed: () => _scrollSection(_aboutKey),
-                        onContactPressed: () => _scrollSection(_contactKey),
-                        onProjectPressed: () => _scrollSection(_projectKey))))
+                        onHomePressed: () =>
+                            _scrollSectionAndCloseDrawer(_homeKey),
+                        onAboutPressed: () =>
+                            _scrollSectionAndCloseDrawer(_aboutKey),
+                        onContactPressed: () =>
+                            _scrollSectionAndCloseDrawer(_contactKey),
+                        onProjectPressed: () =>
+                            _scrollSectionAndCloseDrawer(_projectKey))))
         ],
       ),
     );
